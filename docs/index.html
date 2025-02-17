@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Art Pop-up</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Question</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Click anywhere on the screen for smegma infection!</h1>
-    </div>
+  <div class="container">
+    <h1>What is 5 + 3?</h1>
+    <input type="text" id="answer" placeholder="Napiši svoj odgovor...">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="responseMessage"></p>
+  </div>
 
-    <script>
-        // Add event listener for click event
-        document.body.addEventListener('click', function() {
-            alert('Congrats! you now got smegma! 🎉');
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
